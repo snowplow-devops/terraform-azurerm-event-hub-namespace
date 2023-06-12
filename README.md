@@ -49,6 +49,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_name"></a> [name](#input\_name) | Name of the event hub namespace | `string` | n/a | yes |
 | <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | Name of resource group to deploy the namespace into | `string` | n/a | yes |
+| <a name="input_capacity"></a> [capacity](#input\_capacity) | Capacity of the namespace | `number` | `1` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | The tags to append to this resource | `map(string)` | `{}` | no |
 
 ## Outputs
