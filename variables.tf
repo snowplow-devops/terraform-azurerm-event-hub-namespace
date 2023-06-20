@@ -8,6 +8,12 @@ variable "resource_group_name" {
   type        = string
 }
 
+variable "sku" {
+  description = "The SKU Tier for the eventhub. Note that Standard is the minimum required for scaling features and the kafka protocol"
+  type        = string
+  default     = "Standard"
+}
+
 variable "capacity" {
   description = "Capacity of the namespace"
   type        = number
