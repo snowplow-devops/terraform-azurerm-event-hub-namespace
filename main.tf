@@ -6,7 +6,7 @@ resource "azurerm_eventhub_namespace" "eh_namespace" {
   name                = var.name
   resource_group_name = var.resource_group_name
   location            = data.azurerm_resource_group.rg.location
-  sku                 = "Standard"
+  sku                 = var.sku
   capacity            = var.capacity
 
   tags = var.tags
